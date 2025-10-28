@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{setspace}
+\doublespacing
+\usepackage{rotating}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{Lastname \thepage} % Insert last name
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Defines the "Works Cited" environment
+\newcommand{\bibent}{\noindent \hangindent 40pt}
+\newenvironment{workscited}
+{
+\newpage
+\begin{center}
+    Works Cited
+\end{center}
+}
+{\newpage}
+
+\begin{document}
+    \begin{flushleft}
+
+        % Header
+        Firstname Lastname\\
+        Instructor\\
+        Course\\
+        Month, Day Year\\
+
+        \begin{center}
+            Title of Paper
+        \end{center}
+
+        \setlength{\parindent}{0.5in}
+
+        % Body of Paper
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        More text here.
+
+
+        \newpage
+
+        \begin{workscited}
+
+            \bibent
+            (Copypaste from a citation generator)
+
+            \bibent
+            First, Last. % Author
+            “Inferno 3: Crossings and Commitments.” % Title of article
+            \textit{Commento Baroliniano}, Digital Dante. % Title of container
+            New York, NY: Columbia University Libraries, 2018. % Publisher
+
+        \end{workscited}
+    \end{flushleft}
+\end{document}
+\}
